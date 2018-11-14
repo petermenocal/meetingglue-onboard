@@ -79,30 +79,6 @@ class Form extends React.Component {
           />
         </label>
         <label className='EnquiryForm--Label'>
-          <input
-            className='EnquiryForm--Input'
-            type='email'
-            placeholder='Email'
-            name='email'
-            required
-          />
-        </label>
-        <label className='EnquiryForm--Label has-arrow'>
-          <select
-            className='EnquiryForm--Input EnquiryForm--Select'
-            name='type'
-            defaultValue='Type of Enquiry'
-            required
-          >
-            <option disabled hidden>
-              Type of Enquiry
-            </option>
-            <option>Need to know more</option>
-            <option>Found a bug</option>
-            <option>Want to say hello</option>
-          </select>
-        </label>
-        <label className='EnquiryForm--Label'>
           <textarea
             className='EnquiryForm--Input EnquiryForm--Textarea'
             placeholder='Message'

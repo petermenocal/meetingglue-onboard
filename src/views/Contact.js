@@ -6,7 +6,10 @@ import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
 import Content from '../components/Content'
 import './Contact.css'
 
+var Datastore = require('nedb'),
+  db = new Datastore({ filename: './form.db', autoload: true })
 export default ({ fields }) => {
+  // You can issue commands right away
   const { body, title, subtitle, featuredImage, address, phone, email } = fields
   return (
     <div className='Contact'>
@@ -22,22 +25,6 @@ export default ({ fields }) => {
             <Content source={body} />
 
             <div className='Contact--Details'>
-              {address && (
-                <a
-                  className='Contact--Details--Item'
-                  href={`https://www.google.com.au/maps/search/${encodeURI(
-                    address
-                  )}`}
-                  target='_blank'
-                >
-                  <MapPin /> {address}
-                </a>
-              )}
-              {phone && (
-                <a className='Contact--Details--Item' href={`tel:${phone}`}>
-                  <Smartphone /> {phone}
-                </a>
-              )}
               {email && (
                 <a className='Contact--Details--Item' href={`mailto:${email}`}>
                   <Mail /> {email}
@@ -45,7 +32,6 @@ export default ({ fields }) => {
               )}
             </div>
           </div>
-
           <div>
             <EnquiryFormSimpleAjax name='Simple Form Ajax' />
           </div>

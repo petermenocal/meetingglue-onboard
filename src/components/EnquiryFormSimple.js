@@ -40,7 +40,7 @@ export default ({
         required
       >
         <option disabled hidden>
-          Type of Enquiry
+            Type of Enquiry
         </option>
         <option>Need to know more</option>
         <option>Found a bug</option>
