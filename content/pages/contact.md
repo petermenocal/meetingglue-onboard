@@ -1,18 +1,15 @@
 ---
-title: Contact us
-subtitle: ''
-featuredImage: '/images/uploads/mark-chang-74-3.jpg'
-address: 404 James St, Burleigh Heads QLD 4220
-phone: 0987 123 456
-email: example@example.com
+title: Meeting Glue
+featuredImage: /images/uploads/abstract.jpg
+subtitle: Onboarding and information discovery
+address: 123 Meeting Glue Road
+phone: 702-555-5555
+email: questions@meetingglue.com
 ---
+# It's time for RFP bliss! 
 
-# Example contact form
+We are hard at work prepping **Meeting Glue**, a next generation platform for connecting meeting planners with suppliers in realtime. 
 
-This form is setup to use Netlify's form handling:
+## Want in?
 
-* the form action is set to the current absolute url: `action: '/contact/'`
-* a name attribute is sent with the form's data `'form-name': 'Contact'`
-* netlify data attributes are added to the form `data-netlify data-netlify-honeypot`
-
-Find out more in the [Netlify Docs](https://www.netlify.com/docs/form-handling/).
+Fill out the form to the right to help us populate your profile page. We will send an invitation to the contact person you designate once the site enters beta!
